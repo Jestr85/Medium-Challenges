@@ -111,5 +111,18 @@ console.log(removeApples(['tomato', 'orange', 'apple', 'banana']))
 
 
 
-//Q11. Filter out all the falsy values
+//Q11. Filter out all the falsy values//
 
+function removeFalsy(arr) {
+    return arr.filter(elem => !!elem === true)
+}
+console.log(removeFalsy(['', [], NaN, 500, null, false, 0]))
+
+
+
+//Q12. Truthy to true, Falsy to false
+
+function convertToBoolean(arr) {
+    return arr.map(elem => !!elem)
+}
+console.log(convertToBoolean(['', NaN, false, null, 0, []]))
